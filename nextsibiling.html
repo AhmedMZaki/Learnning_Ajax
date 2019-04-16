@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      .error{
+        color: red;
+        font-weight: lighter;
+        font-family: sans-serif;
+        font-variant: small-caps;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="name_form" action="index.html" method="post" onsubmit="return validate(this);">
+      <!-- <div> -->
+        <input type="text" id="name" name="name" >
+        <p class="error" id="error" name="error"></p>
+      <!-- </div> -->
+      <input type="submit" name="submit" value="send">
+    </form>
+
+    <script type="text/javascript">
+    function validate(form)
+    {
+       if ((document.getElementById('name').value).length < 5) {
+         f = document.getElementById('name');
+         f.nextElementSibling.innerHTML="input length must be at least 5 characters !";
+        return false;
+        
+       }
+       return true;
+    }
+    </script>
+  </body>
+</html>
