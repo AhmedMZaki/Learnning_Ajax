@@ -1,4 +1,6 @@
 <?php
+// this function is used to get the client user
+// ip address
 function getUserIpAddr(){
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
         //ip from share internet
@@ -14,7 +16,7 @@ function getUserIpAddr(){
 
 echo 'User Real IP - '.getUserIpAddr();
 
-
+// this code lines are used to check user password strength
 // Given password
 $password = 'user-input-pass';
 
