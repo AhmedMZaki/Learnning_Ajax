@@ -1,2 +1,6 @@
 *.txt
 code.php
+# comment
+.zip
+.DS_Store
+temp.txt
